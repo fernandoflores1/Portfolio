@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    font-style: italic;
+}
+
+.act{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
