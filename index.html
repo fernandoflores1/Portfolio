@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfolio de Fernando Flores">
   <title>Fernando Flores | Portfolio</title>
-  <script src="https://cdn.tailwindcss.com" defer></script>
+  <script src="https://cdn.tailwindcss.com"></script>
   <script src="/index.js" defer></script>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" media="all">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css" rel="stylesheet" media="all">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="./src/index.css" media="all">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" media="all">
 </head>
 
@@ -20,40 +24,53 @@
   <nav class="fixed w-full bg-white/80 backdrop-blur-sm shadow-sm z-50 py-4">
     <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
       <a href="#inicio" aria-label="Vuelve al inicio" class="text-xl font-bold gradient-text">FF</a>
-      
+
       <!-- Menú de escritorio -->
       <div class="hidden md:flex space-x-8">
         <a href="#inicio" aria-label="Vuelve al inicio" class="nav-link text-gray-700 hover:text-indigo-600">Inicio</a>
-        <a href="#proyectos" aria-label="Vuelve a los proyectos" class="nav-link text-gray-700 hover:text-indigo-600">Proyectos</a>
-        <a href="#habilidades" aria-label="Vuelve a las habilidades" class="nav-link text-gray-700 hover:text-indigo-600">Habilidades</a>
-        <a href="#contacto" aria-label="Vuelve a la tarjeta de contacto" class="nav-link text-gray-700 hover:text-indigo-600">Contacto</a>
+        <a href="#proyectos" aria-label="Vuelve a los proyectos"
+          class="nav-link text-gray-700 hover:text-indigo-600">Proyectos</a>
+        <a href="#habilidades" aria-label="Vuelve a las habilidades"
+          class="nav-link text-gray-700 hover:text-indigo-600">Habilidades</a>
+        <a href="#contacto" aria-label="Vuelve a la tarjeta de contacto"
+          class="nav-link text-gray-700 hover:text-indigo-600">Contacto</a>
       </div>
-      
+
       <!-- Botón hamburguesa para móvil -->
-      <button id="menuBtn" aria-label="Botón hamburguesa para desplegar las opciones de Inicio, Proyectos, Habilidades y Contacto" class="md:hidden text-gray-700 focus:outline-none">
+      <button id="menuBtn"
+        aria-label="Botón hamburguesa para desplegar las opciones de Inicio, Proyectos, Habilidades y Contacto"
+        class="md:hidden text-gray-700 focus:outline-none">
         <i class="bx bx-menu text-2xl"></i>
       </button>
     </div>
-    
+
     <!-- Menú móvil desplegable -->
-    <div id="mobileMenu" class="md:hidden bg-white shadow-lg absolute w-full left-0 top-full transform -translate-y-full transition-transform duration-300 ease-in-out opacity-0 invisible">
+    <div id="mobileMenu"
+      class="md:hidden bg-white shadow-lg absolute w-full left-0 top-full transform -translate-y-full transition-transform duration-300 ease-in-out opacity-0 invisible">
       <div class="flex flex-col px-4 py-4 space-y-4">
-        <a href="#inicio" aria-label="Vuelve al inicio" class="nav-link text-gray-700 hover:text-indigo-600 py-2 border-b border-gray-100">Inicio</a>
-        <a href="#proyectos" aria-label="Vuelve a los proyectos" class="nav-link text-gray-700 hover:text-indigo-600 py-2 border-b border-gray-100">Proyectos</a>
-        <a href="#habilidades" aria-label="Vuelve a las habilidades" class="nav-link text-gray-700 hover:text-indigo-600 py-2 border-b border-gray-100">Habilidades</a>
-        <a href="#contacto" aria-label="Vuelve a la tarjeta de contacto" class="nav-link text-gray-700 hover:text-indigo-600 py-2">Contacto</a>
+        <a href="#inicio" aria-label="Vuelve al inicio"
+          class="nav-link text-gray-700 hover:text-indigo-600 py-2 border-b border-gray-100">Inicio</a>
+        <a href="#proyectos" aria-label="Vuelve a los proyectos"
+          class="nav-link text-gray-700 hover:text-indigo-600 py-2 border-b border-gray-100">Proyectos</a>
+        <a href="#habilidades" aria-label="Vuelve a las habilidades"
+          class="nav-link text-gray-700 hover:text-indigo-600 py-2 border-b border-gray-100">Habilidades</a>
+        <a href="#contacto" aria-label="Vuelve a la tarjeta de contacto"
+          class="nav-link text-gray-700 hover:text-indigo-600 py-2">Contacto</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero Section -->
-  <section id="inicio" class="min-h-screen hero-gradient flex flex-col justify-center items-center text-center px-4 pt-16">
+  <section id="inicio"
+    class="min-h-screen hero-gradient flex flex-col justify-center items-center text-center px-4 pt-16">
     <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
       <div class="relative mb-8">
-        <div class="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 mx-auto rounded-full overflow-hidden custom-shadow">
+        <div
+          class="w-48 h-48 sm:w-64 sm:h-64 md:w-72 md:h-72 lg:w-80 lg:h-80 mx-auto rounded-full overflow-hidden custom-shadow">
           <img src="./src/images/ImagenFernando.jpg" alt="Fernando Flores" class="w-full h-full object-cover" />
         </div>
-        <div class="absolute -bottom-2 -right-2 bg-indigo-600 text-white rounded-full w-10 h-10 flex items-center justify-center">
+        <div
+          class="absolute -bottom-2 -right-2 bg-indigo-600 text-white rounded-full w-10 h-10 flex items-center justify-center">
           <i class="bx bx-code-alt"></i>
         </div>
       </div>
@@ -64,16 +81,20 @@
         Desarrollador de Aplicaciones Web
       </p>
       <div class="flex flex-wrap justify-center gap-4 mb-12">
-        <a href="#contacto" aria-label="Vuelve a la tarjeta de contacto" class="bg-white hover:bg-gray-100 text-indigo-600 border border-indigo-600 px-6 py-3 rounded-lg font-medium transition-all flex items-center space-x-2">
+        <a href="#contacto" aria-label="Vuelve a la tarjeta de contacto"
+          class="bg-white hover:bg-gray-100 text-indigo-600 border border-indigo-600 px-6 py-3 rounded-lg font-medium transition-all flex items-center space-x-2">
           <span>Contactar</span>
           <i class="bx bx-envelope"></i>
         </a>
       </div>
       <div class="flex justify-center space-x-4">
-        <a href="https://github.com/fernandoflores1" aria-label="Va a la cuenta de GitHub de Fernando" target="_blank" class="text-gray-600 hover:text-indigo-600 transition-colors">
+        <a href="https://github.com/fernandoflores1" aria-label="Va a la cuenta de GitHub de Fernando" target="_blank"
+          class="text-gray-600 hover:text-indigo-600 transition-colors">
           <i class="bx bxl-github text-3xl"></i>
         </a>
-        <a href="https://www.linkedin.com/in/fernando-flores-malce%C3%B1ido-497a88353/" aria-label="Va a la cuenta de LinkedIn de Fernando" target="_blank" class="text-gray-600 hover:text-indigo-600 transition-colors">
+        <a href="https://www.linkedin.com/in/fernando-flores-malce%C3%B1ido-497a88353/"
+          aria-label="Va a la cuenta de LinkedIn de Fernando" target="_blank"
+          class="text-gray-600 hover:text-indigo-600 transition-colors">
           <i class="bx bxl-linkedin text-3xl"></i>
         </a>
       </div>
@@ -86,10 +107,11 @@
       <h2 class="text-3xl md:text-4xl font-bold mb-4">Mis <span class="gradient-text">Proyectos</span></h2>
       <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
     </div>
-    
+
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
       <!-- Proyecto 1 -->
-      <div class="bg-white flex flex-col h-full rounded-xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="100">
+      <div class="bg-white flex flex-col h-full rounded-xl overflow-hidden card-hover" data-aos="fade-up"
+        data-aos-delay="100">
         <div class="relative">
           <img src="./src/images/WebEmprendimiento.jpg" alt="Proyecto" class="w-full h-56 object-cover" />
           <div class="absolute top-4 right-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -99,7 +121,7 @@
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="text-xl font-semibold mb-2">Web de Emprendimiento</h3>
           <p class="text-gray-600 text-sm mb-4">
-            Web de  la jornada de emprendimiento 
+            Web de la jornada de emprendimiento
             del IES Albarregas junto a mis compañeros de DAW
           </p>
           <div class="mb-4">
@@ -109,19 +131,23 @@
             </div>
           </div>
           <div class="flex justify-between items-center">
-            <a href="https://web-emprendimiento-three.vercel.app/" aria-label="Va a la web de emprendimiento de vercel" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+            <a href="https://web-emprendimiento-three.vercel.app/" aria-label="Va a la web de emprendimiento de vercel"
+              target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
               <span>Ver Demo</span>
               <i class="bx bx-right-arrow-alt ml-1"></i>
             </a>
-            <a href="https://github.com/fernandoflores1/WebEmprendimiento" aria-label="Va al código de la web de emprendimiento de vercel" target="_blank" class="text-gray-600 hover:text-indigo-600">
+            <a href="https://github.com/fernandoflores1/WebEmprendimiento"
+              aria-label="Va al código de la web de emprendimiento de vercel" target="_blank"
+              class="text-gray-600 hover:text-indigo-600">
               <i class="bx bxl-github text-2xl"></i>
             </a>
           </div>
         </div>
       </div>
-      
+
       <!-- Proyecto 2 -->
-      <div class="bg-white flex flex-col h-full rounded-xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="200">
+      <div class="bg-white flex flex-col h-full rounded-xl overflow-hidden card-hover" data-aos="fade-up"
+        data-aos-delay="200">
         <div class="relative">
           <img src="./src/images/GasStation.jpg" alt="Proyecto" class="w-full h-56 object-cover" />
           <div class="absolute top-4 right-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -142,19 +168,23 @@
             </div>
           </div>
           <div class="flex justify-between items-center">
-            <a href="https://gas-station-omega.vercel.app/" aria-label="Va a la web de gasolineras de de vercel" target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+            <a href="https://gas-station-omega.vercel.app/" aria-label="Va a la web de gasolineras de de vercel"
+              target="_blank" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
               <span>Ver Demo</span>
               <i class="bx bx-right-arrow-alt ml-1"></i>
             </a>
-            <a href="https://github.com/fernandoflores1/GasStation" aria-label="Va al código de la web de gasolineras de de vercel" target="_blank" class="text-gray-600 hover:text-indigo-600">
+            <a href="https://github.com/fernandoflores1/GasStation"
+              aria-label="Va al código de la web de gasolineras de de vercel" target="_blank"
+              class="text-gray-600 hover:text-indigo-600">
               <i class="bx bxl-github text-2xl"></i>
             </a>
           </div>
         </div>
       </div>
-      
+
       <!-- Proyecto 3 -->
-      <div class="bg-white flex flex-col h-full rounded-xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="300">
+      <div class="bg-white flex flex-col h-full rounded-xl overflow-hidden card-hover" data-aos="fade-up"
+        data-aos-delay="300">
         <div class="relative">
           <img src="./src/images/Videojuego.jpg" alt="Proyecto" class="w-full h-56 object-cover" />
           <div class="absolute top-4 right-4 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -164,7 +194,7 @@
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="text-xl font-semibold mb-2">Knight Battle</h3>
           <p class="text-gray-600 text-sm mb-4">
-            Videojuego de phaser 3 en 2D donde puedes combatir contra un 
+            Videojuego de phaser 3 en 2D donde puedes combatir contra un
             amigo en el mismo ordenador, cada uno manejando un caballero medieval
           </p>
           <div class="mb-4">
@@ -174,11 +204,13 @@
             </div>
           </div>
           <div class="flex justify-between items-center">
-            <a href="https://susurrador.itch.io/knight-battle" aria-label="Va al videojuego de itch.io" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+            <a href="https://susurrador.itch.io/knight-battle" aria-label="Va al videojuego de itch.io"
+              class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
               <span>Ver Demo</span>
               <i class="bx bx-right-arrow-alt ml-1"></i>
             </a>
-            <a href="https://github.com/fernandoflores1/Knigth_Fight_Videogame" aria-label="Va al código del videojuego de itch.io" class="text-gray-600 hover:text-indigo-600">
+            <a href="https://github.com/fernandoflores1/Knigth_Fight_Videogame"
+              aria-label="Va al código del videojuego de itch.io" class="text-gray-600 hover:text-indigo-600">
               <i class="bx bxl-github text-2xl"></i>
             </a>
           </div>
@@ -186,7 +218,8 @@
       </div>
 
       <!-- Proyecto 4 -->
-      <div class="bg-white flex flex-col h-full rounded-xl overflow-hidden card-hover" data-aos="fade-up" data-aos-delay="400">
+      <div class="bg-white flex flex-col h-full rounded-xl overflow-hidden card-hover" data-aos="fade-up"
+        data-aos-delay="400">
         <div class="relative">
           <img src="./src/images/spotify.jpg" alt="Proyecto" class="w-full h-56 object-cover" />
           <div class="absolute top-4 right-4 bg-indigo-600 text-white text-xs font-bold px-3 py-1 rounded-full">
@@ -196,7 +229,7 @@
         <div class="p-6 flex flex-col flex-grow">
           <h3 class="text-xl font-semibold mb-2">Clon Spotify</h3>
           <p class="text-gray-600 text-sm mb-4">
-            Simulador de Spotify con posibilidad de subir canciones 
+            Simulador de Spotify con posibilidad de subir canciones
             al servidor indicado (actualmente no hay servidor), además de su correspondiente
             lista de favoritos
           </p>
@@ -207,11 +240,13 @@
             </div>
           </div>
           <div class="flex justify-between items-center">
-            <a href="https://fernandoflores1.github.io/Spotify/" aria-label="Va a la web del clon de Spotify de GitHub" class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
+            <a href="https://fernandoflores1.github.io/Spotify/" aria-label="Va a la web del clon de Spotify de GitHub"
+              class="text-indigo-600 hover:text-indigo-800 font-medium flex items-center">
               <span>Ver Demo</span>
               <i class="bx bx-right-arrow-alt ml-1"></i>
             </a>
-            <a href="https://github.com/fernandoflores1/Spotify" aria-label="Va al código del clon de Spotify de GitHub" class="text-gray-600 hover:text-indigo-600">
+            <a href="https://github.com/fernandoflores1/Spotify" aria-label="Va al código del clon de Spotify de GitHub"
+              class="text-gray-600 hover:text-indigo-600">
               <i class="bx bxl-github text-2xl"></i>
             </a>
           </div>
@@ -227,7 +262,7 @@
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Mis <span class="gradient-text">Habilidades</span></h2>
         <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
       </div>
-      
+
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
         <!-- Habilidad 1 -->
         <div class="bg-white p-6 rounded-xl text-center card-hover" data-aos="zoom-in" data-aos-delay="100">
@@ -236,7 +271,7 @@
           </div>
           <h3 class="font-semibold">Bootstrap</h3>
         </div>
-        
+
         <!-- Habilidad 2 -->
         <div class="bg-white p-6 rounded-xl text-center card-hover" data-aos="zoom-in" data-aos-delay="200">
           <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
@@ -244,7 +279,7 @@
           </div>
           <h3 class="font-semibold">CSS3</h3>
         </div>
-        
+
         <!-- Habilidad 3 -->
         <div class="bg-white p-6 rounded-xl text-center card-hover" data-aos="zoom-in" data-aos-delay="300">
           <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
@@ -252,7 +287,7 @@
           </div>
           <h3 class="font-semibold">JavaScript</h3>
         </div>
-        
+
         <!-- Habilidad 4 -->
         <div class="bg-white p-6 rounded-xl text-center card-hover" data-aos="zoom-in" data-aos-delay="400">
           <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
@@ -260,7 +295,7 @@
           </div>
           <h3 class="font-semibold">React</h3>
         </div>
-        
+
         <!-- Habilidad 5 -->
         <div class="bg-white p-6 rounded-xl text-center card-hover" data-aos="zoom-in" data-aos-delay="500">
           <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
@@ -268,7 +303,7 @@
           </div>
           <h3 class="font-semibold">Tailwind CSS</h3>
         </div>
-        
+
         <!-- Habilidad 6 -->
         <div class="bg-white p-6 rounded-xl text-center card-hover" data-aos="zoom-in" data-aos-delay="600">
           <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
@@ -276,7 +311,7 @@
           </div>
           <h3 class="font-semibold">Java</h3>
         </div>
-        
+
         <!-- Habilidad 7 -->
         <div class="bg-white p-6 rounded-xl text-center card-hover" data-aos="zoom-in" data-aos-delay="700">
           <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
@@ -284,7 +319,7 @@
           </div>
           <h3 class="font-semibold">Git</h3>
         </div>
-        
+
         <!-- Habilidad 8 -->
         <div class="bg-white p-6 rounded-xl text-center card-hover" data-aos="zoom-in" data-aos-delay="800">
           <div class="bg-indigo-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
@@ -303,7 +338,7 @@
         <h2 class="text-3xl md:text-4xl font-bold mb-4">Ponte en <span class="gradient-text">Contacto</span></h2>
         <div class="w-24 h-1 bg-indigo-600 mx-auto"></div>
       </div>
-      
+
       <!--<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
         <div class="bg-white rounded-xl p-6 md:p-8 shadow-lg w-full max-w-sm mx-auto h-auto" data-aos="fade-right">
           <h3 class="text-2xl font-semibold mb-6">Envíame un mensaje</h3>
@@ -403,14 +438,18 @@
             </div>
           </div>
         </div>
-        
+
         <div class="mt-8">
           <h4 class="font-medium mb-3">Sígueme en</h4>
           <div class="flex space-x-4">
-            <a href="https://github.com/fernandoflores1" aria-label="Va a la cuenta de GitHub de Fernando" target="_blank" class="bg-gray-100 hover:bg-indigo-100 p-3 flex items-center justify-center rounded-full w-14 h-14 text-gray-600 hover:text-indigo-600 transition-all">
+            <a href="https://github.com/fernandoflores1" aria-label="Va a la cuenta de GitHub de Fernando"
+              target="_blank"
+              class="bg-gray-100 hover:bg-indigo-100 p-3 flex items-center justify-center rounded-full w-14 h-14 text-gray-600 hover:text-indigo-600 transition-all">
               <i class="bx bxl-github text-xl"></i>
             </a>
-            <a href="https://www.linkedin.com/in/fernando-flores-malce%C3%B1ido-497a88353/" aria-label="Va a la cuenta de LinkedIn de Fernando" target="_blank" class="bg-gray-100 hover:bg-indigo-100 p-3 flex items-center justify-center rounded-full w-14 h-14 text-gray-600 hover:text-indigo-600 transition-all">
+            <a href="https://www.linkedin.com/in/fernando-flores-malce%C3%B1ido-497a88353/"
+              aria-label="Va a la cuenta de LinkedIn de Fernando" target="_blank"
+              class="bg-gray-100 hover:bg-indigo-100 p-3 flex items-center justify-center rounded-full w-14 h-14 text-gray-600 hover:text-indigo-600 transition-all">
               <i class="bx bxl-linkedin text-xl"></i>
             </a>
           </div>
@@ -428,19 +467,26 @@
           <p class="text-gray-400">Desarrollador de Aplicaciones Web</p>
         </div>
         <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-8">
-          <a href="#inicio" aria-label="Vuelve al inicio" class="text-gray-300 hover:text-white transition-colors">Inicio</a>
-          <a href="#proyectos" aria-label="Vuelve a los proyectos" class="text-gray-300 hover:text-white transition-colors">Proyectos</a>
-          <a href="#habilidades" aria-label="Vuelve a las habilidades" class="text-gray-300 hover:text-white transition-colors">Habilidades</a>
-          <a href="#contacto" aria-label="Vuelve al contacto" class="text-gray-300 hover:text-white transition-colors">Contacto</a>
+          <a href="#inicio" aria-label="Vuelve al inicio"
+            class="text-gray-300 hover:text-white transition-colors">Inicio</a>
+          <a href="#proyectos" aria-label="Vuelve a los proyectos"
+            class="text-gray-300 hover:text-white transition-colors">Proyectos</a>
+          <a href="#habilidades" aria-label="Vuelve a las habilidades"
+            class="text-gray-300 hover:text-white transition-colors">Habilidades</a>
+          <a href="#contacto" aria-label="Vuelve al contacto"
+            class="text-gray-300 hover:text-white transition-colors">Contacto</a>
         </div>
       </div>
       <div class="border-t border-gray-700 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
         <p>&copy; 2025 Fernando Flores - Todos los derechos reservados</p>
         <div class="mt-4 md:mt-0 flex space-x-4">
-          <a href="https://github.com/fernandoflores1" aria-label="Va a la cuenta de GitHub de Fernando" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+          <a href="https://github.com/fernandoflores1" aria-label="Va a la cuenta de GitHub de Fernando" target="_blank"
+            class="text-gray-400 hover:text-white transition-colors">
             <i class="bx bxl-github text-xl"></i>
           </a>
-          <a href="https://www.linkedin.com/in/fernando-flores-malce%C3%B1ido-497a88353/" aria-label="Va a la cuenta de LinkedIn de Fernando" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+          <a href="https://www.linkedin.com/in/fernando-flores-malce%C3%B1ido-497a88353/"
+            aria-label="Va a la cuenta de LinkedIn de Fernando" target="_blank"
+            class="text-gray-400 hover:text-white transition-colors">
             <i class="bx bxl-linkedin text-xl"></i>
           </a>
         </div>
@@ -449,8 +495,10 @@
   </footer>
 
   <!-- Botón para volver arriba -->
-  <a href="#inicio" aria-label="Vuelve al inicio" class="fixed bottom-8 right-8 bg-indigo-600 text-white p-3 flex items-center justify-center rounded-full w-14 h-14 shadow-lg hover:bg-indigo-700 transition-all">
+  <a href="#inicio" aria-label="Vuelve al inicio"
+    class="fixed bottom-8 right-8 bg-indigo-600 text-white p-3 flex items-center justify-center rounded-full w-14 h-14 shadow-lg hover:bg-indigo-700 transition-all">
     <i class="bx bx-up-arrow-alt text-xl"></i>
   </a>
 </body>
+
 </html>
