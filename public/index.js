@@ -1,14 +1,3 @@
-// Scroll suave
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
-    });
-  });
-});
-
 document.addEventListener('DOMContentLoaded', function () {
   const menuButton = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
@@ -57,5 +46,16 @@ document.addEventListener('DOMContentLoaded', function () {
     duration: 800,
     easing: 'ease-in-out',
     once: false
+  });
+});
+
+// Scroll suave
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+    e.preventDefault();
+
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
   });
 });
